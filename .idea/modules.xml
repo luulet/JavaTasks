@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaTasks.iml" filepath="$PROJECT_DIR$/JavaTasks.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module 1.1/Module 1.1.iml" filepath="$PROJECT_DIR$/Module 1.1/Module 1.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trash/trash.iml" filepath="$PROJECT_DIR$/trash/trash.iml" />
     </modules>
   </component>
 </project>
