@@ -1,7 +1,7 @@
-public class task4 {
+public class Task4 {
     private String name;
 
-    public task4(String name) {
+    public Task4(String name) {
         this.name = name;
     }
 
@@ -11,12 +11,17 @@ public class task4 {
 
     public static void main(String[] args) {
         // Create an instance of the Cat class with a name
-        task4 cat = new task4("Whiskers");
+        Task4 cat = new Task4("Whiskers");
+        Task4 rex = new Task4("Rex");
 
 
 
         // Call the meow method on the cat instance
         cat.meow();
+        cat.meow();
+        rex.meow();
+        cat.meow();
+
 
 
 
