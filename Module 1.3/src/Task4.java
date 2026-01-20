@@ -12,13 +12,13 @@ public class Task4 {
                 int num_2 = (int) (Math.random() * 10) + 1;
                 System.out.print(num_1 + " * " + num_2 + " = ");
                 ans = num_1 * num_2;
-                int userans = Integer.parseInt(scanner.nextLine());
-                if (userans == ans) {
+                int user_ans = Integer.parseInt(scanner.nextLine());
+                if (user_ans == ans) {
                     score = score + 1;
                 }
 
             }
-            System.out.print("score: " + score + "\n");
+            System.out.print("Score: " + score + "\n");
             if (score == 10) {
                 System.out.println("Congratulations! You have mastered multiplication tables!");
                 break;

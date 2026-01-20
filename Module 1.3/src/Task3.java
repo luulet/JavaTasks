@@ -11,7 +11,7 @@ public class Task3 {
         int flg;
 
         for (i = num_1; i <= num_2; i++) {
-            if (i == 0 || i == 0)
+            if (i == 1 || i == 0)
                 continue;
 
 
