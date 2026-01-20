@@ -3,7 +3,7 @@ public class Task1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter coefficents for the quadratic equation (ax^2 + bx + c)");
+        System.out.println("Enter coefficients for the quadratic equation (ax^2 + bx + c)");
         System.out.print("a: ");
         double a = Double.parseDouble(scanner.nextLine());
         System.out.print("b: ");

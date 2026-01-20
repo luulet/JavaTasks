@@ -18,13 +18,13 @@ public class Task4 {
                 }
 
             }
-            System.out.print("Score: " + score + "\n");
+            System.out.print("Score: " + score + " / 10\n");
             if (score == 10) {
                 System.out.println("Congratulations! You have mastered multiplication tables!");
                 break;
             }
             else {
-                System.out.print("Let's try to get a perfect score!\n");
+                System.out.print("Let's try again, try to aim for a perfect score!\n");
             }
         }
     }
