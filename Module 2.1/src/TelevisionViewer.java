@@ -1,4 +1,4 @@
-public class Task1 {
+public class TelevisionViewer {
     public static void main(String[] args) {
         Television myTV = new Television();
         myTV.setChannel(1);
@@ -25,16 +25,31 @@ public class Task1 {
     }
 }
 class Television {
-    public boolean isOn() {
-        return
+    private boolean on;
+    private int channel;
+    public Television() {
+        on = false;
+        channel = 1;
+
     }
-    boolean pressOnOff = false;
-    int getChannel = 0;
-    int setChannel = 0;
+    public boolean isOn() {
+        return on;
+    }
+    public void pressOnOff() {
+        on = !on;
+    }
+    public int getChannel() {
+        return channel;
+    }
 
     public void setChannel(int i) {
+        if (channel >= 10) {
+            channel = 1;
+        }
+        else {
+            channel = i;
+        }
+
     }
 
-    public boolean isOn() {
-    }
 }
