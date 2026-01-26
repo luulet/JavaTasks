@@ -3,17 +3,28 @@ public class CarDriver {
         Car myCar;
 
         myCar = new Car();
-        myCar.setTargetSpeed(50);
+        myCar.turnCruiseOn();
+        myCar.setTargetSpeed(90);
+
+        System.out.println("Current speed is " + myCar.getSpeed() + " km/h");
         System.out.println("Target speed: " + myCar.getTargetSpeed() + "km/h");
-        for (int j = 0; j < 6; j++) {
-            myCar.turnCruiseOn();
-            System.out.println(myCar.getSpeed());
-            System.out.println(": speed is " + myCar.getSpeed() + " km/h");
+
+
+        if (myCar.cruiseControl) {
+            System.out.println("Cruise Control is on.");
+        } else {
+            System.out.println("Cruise Control if off.");
         }
 
-        while (myCar.getSpeed() > 0) {
-            //myCar.decelerate(15);
-            System.out.println(": speed is " + myCar.getSpeed() + " km/h");
+        for (int j = 0; j < 6; j++) {
+
+            myCar.updateSpeed();
+            System.out.println("Current speed is " + myCar.getSpeed() + " km/h");
+            if (myCar.getSpeed() == myCar.getTargetSpeed()) {
+                System.out.println("Car is at target speed.");
+            }
         }
+
+
     }
 }

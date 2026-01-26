@@ -1,14 +1,12 @@
 class Car {
     private double gasolineCapacity;
     private double speed;
-    private boolean cruiseControl;
+    public boolean cruiseControl;
     private double targetSpeed;
-
-
 
     public Car() {
         gasolineCapacity = 30;
-        speed = 0;
+        speed = 60;
         cruiseControl = false;
         targetSpeed = 0;
     }
@@ -22,10 +20,17 @@ class Car {
         return gasolineCapacity;
     }
 
-    public double getSpeed() {
+    public void updateSpeed() {
         if (cruiseControl) {
-            speed = targetSpeed;
+            if (speed < targetSpeed) {
+                speed += 5;
+            } else if (speed > targetSpeed) {
+                speed -= 5;
+            }
         }
+    }
+
+    public double getSpeed() {
         return speed;
     }
 
@@ -37,19 +42,14 @@ class Car {
     public void setTargetSpeed(double i) {
         if (i <= 120 && i >= 30) {
             targetSpeed = i;
-            System.out.print(i);
         } else {
             turnCruiseOff();
         }
-        if (cruiseControl) {
-            speed = targetSpeed;
-        }
     }
 
-    public void turnCruiseOn() {
-        cruiseControl = true;
-    }
+    public void turnCruiseOn() {cruiseControl = true;
+        System.out.println("Cruise Control has been turned on.");}
     public void turnCruiseOff() {
         cruiseControl = false;
-    }
-}
+        System.out.println("Cruise Control has been turned off.");
+    }}
