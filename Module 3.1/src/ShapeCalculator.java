@@ -4,9 +4,9 @@ public class ShapeCalculator {
 
     public static void main(String[] args) {
         ArrayList<Shape> shapes = new ArrayList<Shape>();
-        shapes.add(new Circle(5, 0));
-        shapes.add(new Rectangle(4, 6, 0));
-        shapes.add(new Triangle(3, 8, 0));
+        shapes.add(new Circle(5, 0, "red"));
+        shapes.add(new Rectangle(4, 6, 0, "black"));
+        shapes.add(new Triangle(3, 8, 0, "blue"));
 
         System.out.println();
         System.out.println("Shape Calculator");
