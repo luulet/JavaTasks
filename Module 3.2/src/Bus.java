@@ -1,11 +1,8 @@
-public class Bus implements Vehicle {
-    public String type;
-    public String fuel;
-    public int capacity;
+public class Bus extends AbstractVehicle {
+    private int capacity;
 
-    public Bus(String type, String fuel, int capacity) {
-        this.type = type;
-        this.fuel = fuel;
+    public Bus(String fuel, int capacity) {
+        super("Bus", fuel);
         this.capacity = capacity;
     }
     public void start() {

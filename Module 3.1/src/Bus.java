@@ -28,11 +28,13 @@ public class Bus extends Car {
     public void passangerEnter(int i) {
         if (i > 0 && passangerQuantity + i <= passangerCapacity) {
             passangerQuantity = passangerQuantity + i;
+            System.out.println(i + " passengers entered the bus.");
         }
     }
     public void passangerExit(int i) {
         if (i > 0 && passangerQuantity - i >= 0) {
             passangerQuantity = passangerQuantity - i;
+            System.out.println(i + " passengers left the bus.");
         }
     }
 

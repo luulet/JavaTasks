@@ -3,10 +3,10 @@ public class SportsCar extends Car {
 
     public SportsCar() {
         gasolineCapacity = 20;
-        speed = 80;
+        speed = 60;
         cruiseControl = false;
         targetSpeed = 0;
-        acceleration = 8;
+        acceleration = 10;
         gasolineConsumption = 3;
         gasolineLevel = 20;
     }

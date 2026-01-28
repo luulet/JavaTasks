@@ -1,14 +1,13 @@
-public class Car implements Vehicle {
+public class Car extends AbstractVehicle {
 
-    public String type;
-    public String fuel;
-    public String color;
 
-    public Car(String type, String fuel, String color) {
-        this.type = type;
-        this.fuel = fuel;
+    private String color;
+
+    public Car(String fuel, String color) {
+        super("Car", fuel);
         this.color = color;
     }
+
     public void start() {
         System.out.println("Car is starting...");
     }

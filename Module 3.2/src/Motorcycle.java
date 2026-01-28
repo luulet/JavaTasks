@@ -1,11 +1,8 @@
-public class Motorcycle implements Vehicle {
-    public String type;
-    public String fuel;
-    public String color;
+public class Motorcycle extends AbstractVehicle {
+    private String color;
 
-    public Motorcycle(String type, String fuel, String color) {
-        this.type = type;
-        this.fuel = fuel;
+    public Motorcycle(String fuel, String color) {
+        super("Motorcycle", fuel);
         this.color = color;
     }
     public void start() {
