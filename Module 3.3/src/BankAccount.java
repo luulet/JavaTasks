@@ -7,9 +7,7 @@ public class BankAccount {
     private static int totalAccounts = 0;
     private static int nextAccountNumber = 0;
 
-    BankAccount() {
-        int money = 0;
-    }
+
     BankAccount(int money) {
         this.money = money;
         this.accountNumber = nextAccountNumber++;
