@@ -1,8 +1,7 @@
 public class CarDriver {
     public static void main(String[] args) {
-        Car myCar;
 
-        myCar = new Car();
+        Car myCar = new Car();
         myCar.turnCruiseOn();
         myCar.setTargetSpeed(90);
         System.out.println("Normal car: ");
@@ -26,9 +25,9 @@ public class CarDriver {
         }
 
 
-        SportsCar mySportCar;
 
-        mySportCar = new SportsCar();
+
+        SportsCar mySportCar = new SportsCar();
         mySportCar.turnCruiseOn();
         mySportCar.setTargetSpeed(90);
         System.out.println();
