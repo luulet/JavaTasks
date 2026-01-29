@@ -30,7 +30,7 @@ public class BankAccount {
     }
     int count = 0;
 
-    public int getTotalAccounts() {
+    public static int getTotalAccounts() {
         return totalAccounts;
     }
 
