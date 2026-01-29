@@ -28,7 +28,6 @@ public class BankAccount {
     public int getBalance() {
         return money;
     }
-    int count = 0;
 
     public static int getTotalAccounts() {
         return totalAccounts;
