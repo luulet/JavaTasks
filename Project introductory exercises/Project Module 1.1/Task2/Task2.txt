@@ -1,0 +1,13 @@
+Let's look at a supermarket's operational system as an example. Customers are more likely to go grocery shopping at
+certain times of the day, such as after work or during weekends. This creates variability in the amount of
+customers and in checkout queue lengths depending on the time of day.
+
+The system is also complex because it has many interacting components, for instance customers, employees, suppliers,
+inventory and checkout counters. The amount of checkout counters and employees affect customer waiting times and overall
+service quality. Managing inventory with different suppliers adds extra layers of complexity.
+
+There is strong interconnectedness within the supermarket system. For example delays in supplier deliveries can
+lead to inventory problems and having no stock of certain products. This will affect customers satisfaction that lead
+to sales. High customer traffic can lead to being short-staffed and increase customer's waiting time. The pricing of
+a product affect its demand, which needs to be taken into consideration when doing the inventory operations.
+As each element has affects on one another, a supermarket is managed as an interconnected system.

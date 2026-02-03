@@ -1,0 +1,5 @@
+A simulation could be used to analyze different types of road intersections. Let's say that you have unconnected roads,
+and you need an intersection. It would make sense to simulate intersections with different lane designs, with and without
+traffic controls and with different amount of traffic. Testing different types of intersections can be done easily in
+simulations as for example adding an extra lane can be done in seconds. In the real world it would be costly to
+construct that same lane, without even knowing if it would improve the flow of traffic, hence simulations are used.
