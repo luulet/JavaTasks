@@ -1,0 +1,4 @@
+Normal distribution (bell curve): Most data points cluster around a central mean, with frequencies decreasing symmetrically toward the tails.
+
+Poisson distribution: Expresses the probability of events occuring in a fixed interval of time.
+Constant mean rate of events is known, but each event is independent and hence they don't rely on other instances of events.

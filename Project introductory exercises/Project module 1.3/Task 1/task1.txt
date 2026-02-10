@@ -1,0 +1,3 @@
+Using the example AgeDistribution java class, and changing variables, I created the algorithm for the next task.
+The algorithm generates a random number from 1 to 100, the number corresponds to different ages with their own
+percentages of the whole. This process is repeated 1000 times like asked in the assignment.

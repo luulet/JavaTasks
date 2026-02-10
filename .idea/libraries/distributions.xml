@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="distributions">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/distributions.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
