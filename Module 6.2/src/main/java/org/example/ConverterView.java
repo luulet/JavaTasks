@@ -15,9 +15,9 @@ import static javafx.application.Application.launch;
 
 public class ConverterView extends Application {
 
-    private ConverterController controller = new ConverterController();
+    private Controller controller = new Controller();
     private Label resultField = new Label();
-    public void start(Stage view) {
+    public void start(Stage window) {
         VBox layout = new VBox();
         TextField textInput = new TextField();
         Button switchButton = new Button("Euro to Dollar");
@@ -29,11 +29,11 @@ public class ConverterView extends Application {
         layout.getChildren().add(convertButton);
 
 
-        view.setScene(new Scene(layout));
-        view.setWidth(200);
-        view.setHeight(300);
-        view.show();
-        layout.getStylesheets().add("style.css");
+
+        window.setWidth(200);
+        window.setHeight(300);
+
+
 
         switchButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -49,9 +49,18 @@ public class ConverterView extends Application {
         convertButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-
+                try {
+                    double result = controller.convert(Double.parseDouble(textInput.getText()));
+                    resultField.setText(String.valueOf(textInput));
+                } catch (Exception e) {
+                    resultField.setText("error");
+                }
             }
         });
+        Scene view = new Scene(layout);
+        layout.getStylesheets().add("style.css");
+        window.setScene(view);
+        window.show();
 
 
 
