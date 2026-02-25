@@ -20,9 +20,11 @@ public class ConverterView extends Application {
     public void start(Stage window) {
         VBox layout = new VBox();
         TextField textInput = new TextField();
+        Label instruction = new Label("Enter the amount of euros to convert:");
         Button switchButton = new Button("Euro to Dollar");
         Button convertButton = new Button("Convert");
 
+        layout.getChildren().add(instruction);
         layout.getChildren().add(textInput);
         layout.getChildren().add(resultField);
         layout.getChildren().add(switchButton);
@@ -30,7 +32,8 @@ public class ConverterView extends Application {
 
 
 
-        window.setWidth(200);
+
+        window.setWidth(300);
         window.setHeight(300);
 
 
@@ -41,8 +44,10 @@ public class ConverterView extends Application {
                 controller.toggleMode();
                 if (controller.getMode()) {
                     switchButton.setText("Dollar to Euro");
+                    instruction.setText("Enter the amount of dollars to convert:");
                 } else {
                     switchButton.setText("Euro to Dollar");
+                    instruction.setText("Enter the amount of euros to convert:");
                 }
             }
         });
@@ -51,9 +56,9 @@ public class ConverterView extends Application {
             public void handle(ActionEvent actionEvent) {
                 try {
                     double result = controller.convert(Double.parseDouble(textInput.getText()));
-                    resultField.setText(String.valueOf(textInput));
+                    resultField.setText(String.valueOf(result));
                 } catch (Exception e) {
-                    resultField.setText("error");
+                    resultField.setText("Invalid input");
                 }
             }
         });
