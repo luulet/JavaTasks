@@ -1,0 +1,11 @@
+.button {
+    -fx-background-color: #ff0000;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 20px;
+}
+.root {
+    -fx-padding: 10px;
+    -fx-spacing: 10px;
+    -fx-font-family: "sans-serif";
+    -fx-font-size: 15px;
+}
